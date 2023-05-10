@@ -1,7 +1,12 @@
 {
-  "hosting": {
-    "public": "public"
-  },
+  "hosting": [
+    {
+      "site": "develop"
+    },
+    {
+      "site": "live"
+    }
+  ],
   "functions": {
     "source": "functions"
   },
