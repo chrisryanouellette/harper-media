@@ -1,1 +1,1 @@
-# harper-media
+# Harper Media
