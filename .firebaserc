@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "harper-media-87677"
-  }
+  },
+  "targets": {
+    "harper-media-87677": {
+      "hosting": {
+        "develop": [
+          "develop-harper-media"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
