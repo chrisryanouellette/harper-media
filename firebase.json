@@ -1,10 +1,13 @@
 {
   "hosting": [
     {
-      "site": "develop"
-    },
-    {
-      "site": "live"
+      "site": "develop-harper-media",
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
     }
   ],
   "functions": {
