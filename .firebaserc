@@ -5,8 +5,11 @@
   "targets": {
     "harper-media-87677": {
       "hosting": {
-        "develop": [
-          "develop-harper-media"
+        "develop-harper-media": [
+          "develop"
+        ],
+        "harper-media-87677": [
+          "production"
         ]
       }
     }
