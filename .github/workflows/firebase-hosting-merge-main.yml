@@ -14,8 +14,12 @@ jobs:
         working-directory: ./packages/frontend
     steps:
       - uses: actions/checkout@v3
+      - name: Change Dir
+        run: cd ../../
       - name: Install & Build
-        run: cd ../../ && yarn unprepare && yarn && yarn nx run frontend:build
+        run: yarn unprepare && yarn && yarn nx run frontend:build
+      - name: Reset Dir
+        run: cd ./packages/frontend
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
