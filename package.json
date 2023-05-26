@@ -2,46 +2,36 @@
   "name": "harper-media",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "prepare": "husky install",
     "unprepare": "npm pkg delete scripts.prepare",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "ci": "yarn lint",
-    "lint": "yarn eslint && yarn tsc",
-    "eslint": "next lint",
-    "eslint:fix": "next lint --fix",
-    "tsc": "tsc --noemit"
+    "nx:ci": "yarn nx run-many -t ci",
+    "nx:build": "yarn nx run-many -t build"
   },
   "dependencies": {
-    "@ouellettec/design-system": "^1.0.0-alpha.25",
     "firebase": "^9.21.0",
-    "firebase-admin": "^11.8.0",
-    "next": "13.4.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "firebase-admin": "^11.8.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
+    "@nx/workspace": "16.2.2",
     "@types/node": "20.1.2",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
-    "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
-    "eslint-config-next": "13.4.1",
     "eslint-config-omlette": "^1.0.6",
-    "eslint-plugin-tailwindcss": "^3.11.0",
     "husky": "^8.0.3",
     "jest": "^29.5.0",
-    "postcss": "8.4.23",
     "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.2.8",
-    "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "nx": "16.2.2"
   },
   "volta": {
     "node": "18.16.0"
+  },
+  "nx": {
+    "targets": {}
   }
 }

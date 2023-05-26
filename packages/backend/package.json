@@ -1,6 +1,8 @@
 {
-  "name": "functions",
+  "name": "backend",
+  "version": "0.0.1",
   "scripts": {
+    "ci": "yarn lint",
     "lint": "eslint --ext .js,.ts .",
     "build": "tsc",
     "build:watch": "tsc --watch",
