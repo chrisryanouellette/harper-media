@@ -1,0 +1,14 @@
+{
+  "hosting": [
+    {
+      "site": "develop-harper-media",
+      "source": ".",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    },
+    {
+      "site": "harper-media-87677",
+      "source": ".",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    }
+  ]
+}
