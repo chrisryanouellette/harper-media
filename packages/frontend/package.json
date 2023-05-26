@@ -1,0 +1,31 @@
+{
+  "name": "frontend",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "ci": "yarn lint",
+    "lint": "yarn eslint && yarn tsc",
+    "eslint": "next lint",
+    "eslint:fix": "next lint --fix",
+    "tsc": "tsc --noemit"
+  },
+  "dependencies": {
+    "@ouellettec/design-system": "^1.0.0-alpha.25",
+    "next": "13.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "autoprefixer": "10.4.14",
+    "eslint-config-next": "13.4.1",
+    "eslint-plugin-tailwindcss": "^3.11.0",
+    "postcss": "8.4.23",
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "tailwindcss": "3.3.2"
+  }
+}
