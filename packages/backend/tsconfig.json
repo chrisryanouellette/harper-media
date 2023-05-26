@@ -3,7 +3,7 @@
     "module": "commonjs",
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "outDir": "../../.backend",
+    "outDir": ".backend",
     "sourceMap": true,
     "strict": true,
     "target": "es2017"
